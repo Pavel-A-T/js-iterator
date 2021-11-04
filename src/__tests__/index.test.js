@@ -17,7 +17,7 @@ test(('function iterator'), () => {
     attack: 40,
     defence: 10,
   };
-  const end = { alue: undefined, done: true };
+  const end = { value: undefined, done: false };
   const persons = [zomb, char];
   const team = new Team(persons).iterator();
   expect(team.next().value).toEqual(zomb);

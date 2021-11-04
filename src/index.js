@@ -10,7 +10,7 @@ export default class Team {
         if (persons.length > 0) {
           return { value: persons.shift(), done: true };
         }
-        return { value: undefined, done: true };
+        return { value: undefined, done: false };
       },
     };
   }
